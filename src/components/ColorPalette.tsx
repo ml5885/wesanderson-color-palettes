@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import placeholderSrc from "../assets/placeholder.png";
 
 type Color = string;
 
@@ -30,7 +32,6 @@ const ColorPalette: React.FC<ColorPaletteProps> = (props) => {
 	};
 
 	const handleOverlayClick = (e: React.MouseEvent) => {
-		// Check if the click occurred outside the modal content
 		if (
 			isExpanded &&
 			e.target instanceof HTMLElement &&
@@ -43,7 +44,15 @@ const ColorPalette: React.FC<ColorPaletteProps> = (props) => {
 	return (
 		<div className="color-palette-wrapper">
 			<div className="color-palette-image" onClick={handleImageClick}>
-				<img src={image} alt="Image" />
+				<LazyLoadImage
+					src={image}
+					alt="image"
+					placeholder={
+						<span>
+							<img src={placeholderSrc} alt="placeholder iamge"></img>
+						</span>
+					}
+				/>
 			</div>
 			<div className="color-palette">
 				{colors.map((color, index) => (
@@ -62,7 +71,7 @@ const ColorPalette: React.FC<ColorPaletteProps> = (props) => {
 				<div className="modal" onClick={handleOverlayClick}>
 					<div className="modal-content">
 						<div className="modal-image">
-							<img src={image} alt="Image" />
+							<LazyLoadImage src={image} alt="image" />;
 						</div>
 					</div>
 				</div>

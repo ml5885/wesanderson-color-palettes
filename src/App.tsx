@@ -24,14 +24,14 @@ const App: React.FC = () => {
 			image: "/assets/images/LifeAquatic/LifeAquatic2.png",
 			colors: ["#BF8A26", "#BF8973", "#E6D0B3", "#BFA799", "#A61508"],
 		},
-		{
-			image: "/assets/images/LifeAquatic/LifeAquatic3.png",
-			colors: ["#A67233", "#A68568", "#73462D", "#40180A", "#8C0303"],
-		},
-		{
-			image: "/assets/images/LifeAquatic/LifeAquatic4.png",
-			colors: ["#758DA6", "#7E775E", "#59583B", "#8C7C6F", "#730202"],
-		},
+		// {
+		// 	image: "/assets/images/LifeAquatic/LifeAquatic3.png",
+		// 	colors: ["#A67233", "#A68568", "#73462D", "#40180A", "#8C0303"],
+		// },
+		// {
+		// 	image: "/assets/images/LifeAquatic/LifeAquatic4.png",
+		// 	colors: ["#758DA6", "#7E775E", "#59583B", "#8C7C6F", "#730202"],
+		// },
 		{
 			image: "/assets/images/LifeAquatic/LifeAquatic5.png",
 			colors: ["#79838C", "#D9910B", "#BF6B04", "#8C623E", "#D9D4D0"],
