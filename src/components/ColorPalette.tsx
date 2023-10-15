@@ -23,9 +23,9 @@ const ColorPalette: React.FC<ColorPaletteProps> = (props) => {
 		navigator.clipboard.writeText(color);
 	    setCopiedColor(color);
 
-	    // setTimeout(() => {
-	    //   setCopiedColor(null);
-	    // }, 2000);
+	    setTimeout(() => {
+	      setCopiedColor(null);
+	    }, 2000);
 	};
 
 	const handleImageClick = () => {
