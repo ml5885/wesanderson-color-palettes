@@ -13,6 +13,7 @@ const ColorPalette: React.FC<ColorPaletteProps> = (props) => {
 	const { colors, image } = props;
 	const [hoveredColor, setHoveredColor] = useState<Color | null>(null);
 	const [isExpanded, setIsExpanded] = useState(false);
+	const [copiedColor, setCopiedColor] = useState<string | null>(null);
 
 	const handleColorHover = (color: Color) => {
 		setHoveredColor(color);
@@ -20,6 +21,11 @@ const ColorPalette: React.FC<ColorPaletteProps> = (props) => {
 
 	const handleColorClick = (color: Color) => {
 		navigator.clipboard.writeText(color);
+	    setCopiedColor(color);
+
+	    // setTimeout(() => {
+	    //   setCopiedColor(null);
+	    // }, 2000);
 	};
 
 	const handleImageClick = () => {
@@ -67,6 +73,11 @@ const ColorPalette: React.FC<ColorPaletteProps> = (props) => {
 					</div>
 				))}
 			</div>
+	      	{copiedColor && 
+      		<div className="color-copied-popup">
+      			Copied {copiedColor}
+  			</div>}
+
 			{isExpanded && (
 				<div className="modal" onClick={handleOverlayClick}>
 					<div className="modal-content">
