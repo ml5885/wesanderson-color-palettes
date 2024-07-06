@@ -41,8 +41,8 @@
 }
 
 .board-bottom-panel p {
-	padding:0px;
-	margin:0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 .board-bottom-panel a {
@@ -199,31 +199,33 @@
 }
 
 .color-copied-popup {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  font-family: Futura, sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 5px;
-  animation: fadeOut 1.5s ease-in-out forwards;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	background: rgba(0, 0, 0, 0.7);
+	color: white;
+	font-family: Futura, sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	padding: 10px;
+	border-radius: 5px;
+	animation: fadeInOut 2s ease-in-out forwards;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 1;
+	}
+	90% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
-
 
 @media screen and (max-width: 1433px) {
 	.board-side-panel {
@@ -249,8 +251,8 @@
 	}
 
 	.color-circle {
-		width: 60px;
-		height: 60px;
+		width: 45px;
+		height: 45px;
 	}
 
 	.color-palette-wrapper {
@@ -276,7 +278,7 @@
 	}
 
 	.color-circle {
-		width: 40px;
-		height: 40px;
+		width: 25px;
+		height: 25px;
 	}
 }
