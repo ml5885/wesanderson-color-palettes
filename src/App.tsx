@@ -68,7 +68,7 @@ const App: React.FC = () => {
 					))}
 				</div>
 				<div className="board-bottom-panel">
-					<p>Created by &nbsp;</p>
+					<p>Created by&nbsp;</p>
 					<a target="_blank" rel="noreferrer" href="https://ml5885.github.io/">
 						Michael Li
 					</a>

@@ -270,7 +270,7 @@
 		border-width: 3px;
 	}
 	.header h1 {
-		font-size: 50px;
+		font-size: 30px;
 	}
 
 	.color-palette-image img {
@@ -280,5 +280,9 @@
 	.color-circle {
 		width: 25px;
 		height: 25px;
+	}
+
+	.board-bottom-panel {
+		font-size: 20px;
 	}
 }
